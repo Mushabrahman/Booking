@@ -4,7 +4,7 @@ import Header from "../../components/header/Header";
 import { useState } from "react";
 import { format } from "date-fns";
 import { DateRange } from "react-date-range";
-import SearchItem from "../../components/searchItem/SearchItem";
+import SearchItem from "../../components/searchItem/SearchItems";
 import useFetch from "../../hooks/useFetch";
 import { useContext } from "react";
 import { SearchContext } from "../../context/searchContext";

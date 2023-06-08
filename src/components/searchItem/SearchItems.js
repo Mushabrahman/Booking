@@ -1,4 +1,4 @@
-import "./searchItem.css";
+import "./searchItems.css";
 import { Link } from "react-router-dom";
 
 const SearchItem = ({item}) => {
