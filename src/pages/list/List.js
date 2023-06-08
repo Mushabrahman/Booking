@@ -1,5 +1,5 @@
 import "./list.css";
-import Navbar from "../../components/navbar/Navbar";
+import Navbar from "../../components/navigationbar/Navigationbar";
 import Header from "../../components/header/Header";
 import { useState } from "react";
 import { format } from "date-fns";
