@@ -9,7 +9,7 @@ import List from "./pages/list/List";
 import { Login } from "./pages/login/login";
 import { useState } from "react";
 import { SearchContext } from "./context/searchContext";
-import { AuthContext } from "./context/AuthContext";
+
 
 
 
@@ -33,7 +33,7 @@ function App() {
  
   return (
 
-    <AuthContext.Provider value={{user,setUser}}>
+   
     <SearchContext.Provider value={{dates,setDates,destination,setDestination,options,setOptions}} >
      
     <BrowserRouter>
@@ -47,7 +47,7 @@ function App() {
       </Routes>
     </BrowserRouter>  
     </SearchContext.Provider>
-    </AuthContext.Provider>
+    
   );
 }
 
