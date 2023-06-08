@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Mushabrahman/Booking.git/static/css/main.699f34cd.css",
+    "main.js": "/Mushabrahman/Booking.git/static/js/main.3efe65bc.js",
+    "index.html": "/Mushabrahman/Booking.git/index.html",
+    "main.699f34cd.css.map": "/Mushabrahman/Booking.git/static/css/main.699f34cd.css.map",
+    "main.3efe65bc.js.map": "/Mushabrahman/Booking.git/static/js/main.3efe65bc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.699f34cd.css",
+    "static/js/main.3efe65bc.js"
+  ]
+}
