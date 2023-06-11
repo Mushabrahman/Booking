@@ -15,6 +15,7 @@ import "react-date-range/dist/theme/default.css"; // theme css file
 import { format } from "date-fns";
 import { useNavigate } from "react-router-dom";
 import { SearchContext } from "../../context/searchContext";
+import { Link } from "react-router-dom";
 
 
 const Header = ({ type }) => {
@@ -83,7 +84,15 @@ const Header = ({ type }) => {
               Get rewarded for your travels – unlock instant savings of 10% or
               more with a free Lamabooking account
             </p>
-            {(JSON.parse(localStorage.getItem("userInfo")))? ((JSON.parse(localStorage.getItem("userInfo"))).data.details.username):(<button className="headerBtn">Sign in / Register</button>)}
+            {(JSON.parse(localStorage.getItem("userInfo")))? <></>:(<button className="headerBtn">
+            <Link to="/login" style={{textDecoration:"none", color:"white"}}>
+              Sign in  
+              </Link>
+                <> / </>
+              <Link to="/register" style={{textDecoration:"none", color:"white"}}>
+                Register
+              </Link>
+              </button>)}
             <div className="headerSearch">
               <div className="headerSearchItem">
                 <FontAwesomeIcon icon={faBed} className="headerIcon" />

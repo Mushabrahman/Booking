@@ -7,6 +7,7 @@ import Optional from "../optional/Optional.js";
 
 
 
+
 const Navbar = () => {
 
 const {user}=useContext(AuthContext)
@@ -20,7 +21,7 @@ const {user}=useContext(AuthContext)
         </Link>
         {(JSON.parse(localStorage.getItem("userInfo"))) ? <Optional/>  :(<div className="navItems">
         
-        <Link to="/">
+        <Link to="/register">
         <button className="navButton">Register</button>
         </Link>
         <Link to="/login" >
