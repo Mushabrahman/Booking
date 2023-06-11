@@ -26,7 +26,7 @@ export const Login = () => {
                   "Content-type": "application/json",
                 },
               };
-          const res = await axios.post("/auth/login",{username,password},config);
+          const res = await axios.post("https://mernbackened2.onrender.com/api/auth/login",{username,password},config);
             
          localStorage.setItem("userInfo", JSON.stringify(res));
      
