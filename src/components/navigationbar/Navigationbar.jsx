@@ -15,7 +15,7 @@ const {user}=useContext(AuthContext)
   return (
     <div className="navbar">
       <div className="navContainer">
-        <Link to="/" style={{textDecoration:"none"}}>
+        <Link to="/" style={{textDecoration:"none", color:"white"}}>
         <span className="logo" >Booking</span>
         </Link>
         {(JSON.parse(localStorage.getItem("userInfo"))) ? <Optional/>  :(<div className="navItems">
